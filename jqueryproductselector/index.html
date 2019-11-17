@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Product Selector</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ <script src="productselector.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+</head>
+
+<body>
+ <div class="container mt-5">
+  <div class="row">
+   <div class="col-sm-12 col-md-3">
+    <select id="item-1" class="form-control">
+     <option value="-1">Select Brand</option>
+     <option value="Audi">Audi</option>
+     <option value="Fiat">Fiat</option>
+    </select>
+   </div>
+   <div class="col-sm-12 col-md-3">
+    <select id="item-2" class="form-control">
+     <option value="-1">Select Model</option>
+     <option data-parent-item="Audi" value="AudiA2">A2</option>
+     <option data-parent-item="Audi" value="AudiA3">A3</option>
+     <option data-parent-item="Audi" value="AudiA4">A4</option>
+     <option data-parent-item="Audi" value="AudiA5">A5</option>
+
+     <option data-parent-item="Fiat" value="FiatPunto">Punto</option>
+     <option data-parent-item="Fiat" value="FiatGrande_Punto">Grande Punto</option>
+     <option data-parent-item="Fiat" value="FiatPunto_EVO">Punto EVO</option>
+
+    </select>
+   </div>
+   <div class="col-sm-12 col-md-3">
+    <select id="item-3" class="form-control">
+     <option value="-1">Select Year</option>
+
+     <option data-parent-itemsub="AudiA2" value="/localurl.aspx">2014</option>
+     <option data-parent-itemsub="AudiA2" value="/localurl.aspx">2015</option>
+     <option data-parent-itemsub="AudiA2" value="/localurl.aspx">2016</option>
+
+     <option data-parent-itemsub="AudiA3" value="/localurl.aspx">2015</option>
+     <option data-parent-itemsub="AudiA3" value="/localurl.aspx">2016</option>
+
+     <option data-parent-itemsub="AudiA4" value="/localurl.aspx">2015</option>
+     <option data-parent-itemsub="AudiA4" value="/localurl.aspx">2016</option>
+
+     <option data-parent-itemsub="AudiA5" value="/localurl.aspx">2018</option>
+     <option data-parent-itemsub="AudiA5" value="/localurl.aspx">2019</option>
+     <option data-parent-itemsub="AudiA5" value="/localurl.aspx">2020</option>
+
+
+     <option data-parent-itemsub="FiatPunto" value="/localurl.aspx">2015</option>
+     <option data-parent-itemsub="FiatPunto" value="/localurl.aspx">2016</option>
+
+     <option data-parent-itemsub="FiatGrande_Punto" value="/localurl.aspx">2015</option>
+     <option data-parent-itemsub="FiatGrande_Punto" value="/localurl.aspx">2016</option>
+
+     <option data-parent-itemsub="FiatPunto_EVO" value="/localurl.aspx">2018</option>
+     <option data-parent-itemsub="FiatPunto_EVO" value="/localurl.aspx">2019</option>
+     <option data-parent-itemsub="FiatPunto_EVO" value="/localurl.aspx">2020</option>
+
+    </select>
+   </div>
+  </div>
+ </div>
+</body>
+</html> 
