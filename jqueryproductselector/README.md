@@ -14,8 +14,8 @@ The script reads jsonfiles with key/value.
 
 RULES
 
-The key/val follows the json file names.
-All option boxes are made async, so it doesnt un-disable the select until its loaded.
-Last select option redirects to ie. a product list.
-Don't use special characters (system reserved) in key/val as it can break the AJAX.
+*The key/val follows the json file names.
+*All option boxes are made async, so it doesnt un-disable the select until its loaded.
+*Last select option redirects to ie. a product list.
+*Don't use special characters (system reserved) in key/val as it can break the AJAX.
 
