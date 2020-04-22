@@ -1,0 +1,35 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,125,185,1) 100%) !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-color: rgb(2,0,36) !important;
+}
+
+html, body {
+	font-family: 'Press Start 2P', cursive;
+	font-size:9px;
+}
+
+#component-1 {
+	margin-top: 20px;
+}
+
+#console-1 {
+	height: 220px;
+
+}
+
+
+#console-form {
+	margin-bottom: 0;
+}
+
+
+#console-item-1 td {
+	border-top: 0;
+	padding:0;
+}
